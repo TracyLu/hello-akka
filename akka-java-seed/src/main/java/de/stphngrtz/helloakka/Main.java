@@ -13,7 +13,6 @@ public class Main {
     /**
      * https://github.com/typesafehub/activator-akka-java-seed
      */
-
     public static void main(String[] args) {
         ActorSystem system = ActorSystem.create("MyPingPongActorSystem");
         ActorRef pingActor = system.actorOf(PingActor.props(), "pingActor");
