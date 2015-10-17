@@ -9,6 +9,7 @@ import akka.cluster.singleton.ClusterSingletonManager;
 import akka.cluster.singleton.ClusterSingletonManagerSettings;
 import com.typesafe.config.Config;
 import com.typesafe.config.ConfigFactory;
+import de.stphngrtz.helloakka.actor.*;
 
 public class Main {
 

@@ -1,16 +1,16 @@
-package de.stphngrtz.helloakka;
+package de.stphngrtz.helloakka.actor;
 
 import akka.actor.AbstractActor;
 import akka.actor.Props;
 import akka.japi.pf.ReceiveBuilder;
 
-public class WorkExecutorActor extends AbstractActor {
+public class FrontendActor extends AbstractActor {
 
     public static Props props() {
-        return Props.create(WorkExecutorActor.class);
+        return Props.create(FrontendActor.class);
     }
 
-    public WorkExecutorActor() {
+    public FrontendActor() {
         receive(ReceiveBuilder
                         .matchAny(message -> System.out.println(this.getClass().getSimpleName()))
                         .build()

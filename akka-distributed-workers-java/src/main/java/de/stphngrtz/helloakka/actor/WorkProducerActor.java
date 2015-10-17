@@ -1,4 +1,4 @@
-package de.stphngrtz.helloakka;
+package de.stphngrtz.helloakka.actor;
 
 import akka.actor.AbstractActor;
 import akka.actor.ActorRef;
