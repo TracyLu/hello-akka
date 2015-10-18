@@ -12,6 +12,27 @@ public abstract class MessageProtocol {
         }
     }
 
+    public static final class Tick implements Serializable {
+        @Override
+        public String toString() {
+            return "Tick";
+        }
+    }
+
+    public static final class Ok implements Serializable {
+        @Override
+        public String toString() {
+            return "Ok";
+        }
+    }
+
+    public static final class Nok implements Serializable {
+        @Override
+        public String toString() {
+            return "Nok";
+        }
+    }
+
     public static final class RegisterWorker implements Serializable {
         public final UUID worker;
 
