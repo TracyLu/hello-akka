@@ -13,6 +13,7 @@
         <module>akka-java-seed</module>
         <module>hello-akka-java8</module>
         <module>akka-distributed-workers-java</module>
+        <module>akka-supervision</module>
     </modules>
 
     <dependencyManagement>
