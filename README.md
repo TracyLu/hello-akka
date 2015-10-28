@@ -2,7 +2,7 @@
 
 https://github.com/typesafehub?page=1&query=akka&utf8=✓
 
-* https://github.com/typesafehub/activator-akka-distributed-workers-java
+TODO:
+* https://github.com/akka/akka/tree/master/akka-samples
 * https://github.com/typesafehub/activator-akka-stream-java8
 * https://github.com/typesafehub/activator-akka-clustering
-* https://github.com/typesafehub/activator-akka-supervision
