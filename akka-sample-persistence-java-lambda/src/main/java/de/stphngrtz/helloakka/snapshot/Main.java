@@ -5,6 +5,9 @@ import akka.actor.ActorSystem;
 
 public class Main {
 
+    /**
+     * https://github.com/akka/akka/tree/master/akka-samples/akka-sample-persistence-java-lambda
+     */
     public static void main(String[] args) throws InterruptedException {
         ActorSystem system = ActorSystem.create("example");
         ActorRef snapshotActor = system.actorOf(MySnapshotActor.props(), "my-snapshot-actor");

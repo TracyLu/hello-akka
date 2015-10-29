@@ -15,6 +15,7 @@
         <module>akka-distributed-workers-java</module>
         <module>akka-supervision</module>
         <module>akka-sample-persistence-java-lambda</module>
+        <module>akka-sample-fsm-java-lambda</module>
     </modules>
 
     <dependencyManagement>

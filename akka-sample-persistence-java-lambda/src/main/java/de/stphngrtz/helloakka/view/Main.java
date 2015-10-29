@@ -8,6 +8,9 @@ import java.util.concurrent.TimeUnit;
 
 public class Main {
 
+    /**
+     * https://github.com/akka/akka/tree/master/akka-samples/akka-sample-persistence-java-lambda
+     */
     public static void main(String[] args) throws InterruptedException {
         ActorSystem system = ActorSystem.create("example");
         ActorRef persistentActor = system.actorOf(MyPersistentActor.props(), "my-persistent-actor");
