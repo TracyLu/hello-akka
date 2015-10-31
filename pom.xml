@@ -20,6 +20,7 @@
         <module>akka-docs-fsm-java-lambda</module>
         <module>akka-docs-persistent-fsm-java-lambda</module>
         <module>akka-sample-java-cluster-simple</module>
+        <module>akka-sample-java-cluster-transformation</module>
     </modules>
 
     <dependencyManagement>
