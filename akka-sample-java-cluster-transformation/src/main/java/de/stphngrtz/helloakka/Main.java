@@ -5,7 +5,6 @@ import akka.actor.ActorSystem;
 import akka.dispatch.OnSuccess;
 import akka.pattern.Patterns;
 import akka.util.Timeout;
-import com.sun.javaws.exceptions.InvalidArgumentException;
 import com.typesafe.config.Config;
 import com.typesafe.config.ConfigFactory;
 import scala.concurrent.duration.Duration;
@@ -25,8 +24,7 @@ public class Main {
             startupBackend("2552");
             startupBackend("2553");
             startupFrontend("2554");
-        }
-        else {
+        } else {
             if (args.length == 2) {
                 if (args[0] == "frontend")
                     startupFrontend(args[1]);
@@ -43,8 +41,8 @@ public class Main {
         Config config = ConfigFactory
                 .parseString("akka.remote.netty.tcp.port=" + port)
                 .withFallback(ConfigFactory
-                                .parseString("akka.cluster.roles = [backend]")
-                                .withFallback(ConfigFactory.load())
+                        .parseString("akka.cluster.roles = [backend]")
+                        .withFallback(ConfigFactory.load())
                 );
 
         ActorSystem system = ActorSystem.create("ClusterSystem", config);
@@ -55,8 +53,8 @@ public class Main {
         Config config = ConfigFactory
                 .parseString("akka.remote.netty.tcp.port=" + port)
                 .withFallback(ConfigFactory
-                                .parseString("akka.cluster.roles = [frontend]")
-                                .withFallback(ConfigFactory.load())
+                        .parseString("akka.cluster.roles = [frontend]")
+                        .withFallback(ConfigFactory.load())
                 );
 
         ActorSystem system = ActorSystem.create("ClusterSystem", config);
