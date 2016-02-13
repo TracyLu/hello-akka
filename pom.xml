@@ -23,7 +23,6 @@
         <module>akka-sample-java-cluster-transformation</module>
         <module>akka-sample-java-cluster-stats</module>
         <module>akka-sample-java-cluster-factorial</module>
-        <module>persistence-with-event-sourcing</module>
     </modules>
 
     <dependencyManagement>
