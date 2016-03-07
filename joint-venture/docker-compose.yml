@@ -1,0 +1,15 @@
+mongodb:
+  image: mongo:3.2.3
+  ports:
+    - "27017:27017"
+
+joint-venture-user:
+  build: ./user
+  ports:
+    - "4567:4567"
+  volumes:
+    - ./user/target:/data
+  links:
+    - mongodb:db
+  environment:
+    - DUMMY=dummy
